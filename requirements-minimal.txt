@@ -1,0 +1,19 @@
+# Minimal requirements for mmWave Radar Processing Tools
+# Use this file if the main requirements.txt causes installation issues
+
+# Essential dependencies only
+numpy
+scipy
+matplotlib
+numba
+pyFFTW
+PyQt5
+pyqtgraph
+pyserial
+psutil
+
+# If PyQt5 fails to install, try replacing it with:
+# PySide2
+
+# Installation command:
+# pip install -r requirements-minimal.txt

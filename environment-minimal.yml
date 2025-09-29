@@ -1,0 +1,22 @@
+name: radar-minimal
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Essential packages only - use this if main environment.yml fails
+  - python>=3.8
+  - numpy
+  - scipy
+  - matplotlib
+  - numba
+  - pyqt
+  - pyserial
+  - psutil
+  - pip
+  - pip:
+      - pyfftw
+      - pyqtgraph
+
+# Quick installation:
+# conda env create -f environment-minimal.yml
+# conda activate radar-minimal

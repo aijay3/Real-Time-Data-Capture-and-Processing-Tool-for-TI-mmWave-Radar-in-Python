@@ -1,0 +1,53 @@
+# mmWave Radar Processing Tools - Python Dependencies
+# Tested with Python 3.8, 3.9, 3.10, 3.11
+
+# Core scientific computing dependencies
+numpy>=1.21.0,<2.0.0
+scipy>=1.7.0,<2.0.0
+matplotlib>=3.5.0,<4.0.0
+
+# High-performance computing
+numba>=0.56.0,<1.0.0
+llvmlite>=0.39.0,<1.0.0
+pyFFTW>=0.13.0,<1.0.0
+
+# GUI framework - PyQt5 (primary choice)
+PyQt5>=5.15.0,<6.0.0
+PyQt5-Qt5>=5.15.0,<6.0.0
+PyQt5-sip>=12.8.0,<13.0.0
+pyqtgraph>=0.13.0,<1.0.0
+
+# Serial communication
+pyserial>=3.4,<4.0.0
+
+# System utilities
+psutil>=5.8.0,<6.0.0
+
+# Supporting dependencies (may be auto-installed but specified for completeness)
+contourpy>=1.0.0,<2.0.0
+cycler>=0.11.0,<1.0.0
+fonttools>=4.30.0,<5.0.0
+importlib_resources>=5.0.0,<7.0.0
+kiwisolver>=1.3.0,<2.0.0
+packaging>=21.0,<25.0
+pyparsing>=3.0.0,<4.0.0
+python-dateutil>=2.8.0,<3.0.0
+six>=1.16.0,<2.0.0
+zipp>=3.6.0,<4.0.0
+
+# Alternative GUI option (uncomment if PyQt5 installation fails)
+# PySide2>=5.15.0,<6.0.0
+
+# Development and debugging (optional - uncomment if needed)
+# ipython>=7.0.0,<9.0.0
+# jupyter>=1.0.0,<2.0.0
+
+# Note: The following are part of Python standard library (no installation needed):
+# - os, sys, time, math, re, logging (built-in modules)
+# - threading, queue, socket (networking and concurrency)
+# - concurrent.futures, functools (Python 3.2+)
+# - dataclasses (Python 3.7+)
+# - typing (Python 3.5+)
+
+# Minimum Python version required: 3.8+
+# For best compatibility, use Python 3.9 or 3.10

@@ -1,0 +1,50 @@
+name: real-time-radar
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python interpreter - flexible version for better compatibility
+  - python>=3.8,<3.12
+
+  # Core scientific computing (from conda-forge for better optimization)
+  - numpy>=1.21,<2.0
+  - scipy>=1.7,<2.0
+  - matplotlib>=3.5,<4.0
+
+  # High-performance computing
+  - numba>=0.56,<1.0
+  - llvmlite>=0.39,<1.0
+
+  # GUI framework - PyQt5 from conda-forge
+  - qt>=5.15,<6.0
+  - pyqt>=5.15,<6.0
+
+  # System utilities and communication
+  - pyserial>=3.4,<4.0
+  - psutil>=5.8,<6.0
+
+  # Standard development tools
+  - pip
+  - setuptools
+  - wheel
+
+  # Packages only available via pip
+  - pip:
+      # FFTW Python bindings (not available in conda)
+      - pyfftw>=0.13.0,<1.0.0
+
+      # PyQt plotting library (conda version often outdated)
+      - pyqtgraph>=0.13.0,<1.0.0
+
+      # Supporting libraries (if not automatically resolved by conda)
+      - importlib_resources>=5.0.0,<7.0.0
+
+# Installation instructions:
+# 1. conda env create -f environment.yml
+# 2. conda activate real-time-radar
+# 3. python launcher.py
+
+# Alternative channels if packages not found:
+# - anaconda
+# - pyviz
+# - intel (for optimized numpy/scipy)

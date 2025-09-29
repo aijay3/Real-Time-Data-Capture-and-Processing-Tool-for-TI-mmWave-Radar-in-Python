@@ -1,0 +1,47 @@
+name: real-time-radar-cross-platform
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Cross-platform conda environment for mmWave Radar Tools
+  # Works on Windows, macOS, and Linux
+
+  # Python interpreter
+  - python>=3.8,<3.12
+
+  # Core scientific computing
+  - numpy
+  - scipy
+  - matplotlib
+
+  # High-performance computing
+  - numba
+
+  # GUI framework
+  - pyqt=5
+
+  # System utilities
+  - psutil
+
+  # Development tools
+  - pip
+
+  # Platform-specific packages via pip
+  - pip:
+      # Cross-platform packages
+      - pyfftw
+      - pyqtgraph
+      - pyserial
+
+      # Platform-specific optimizations (optional)
+      # - mkl-fft           # Intel MKL optimizations (if available)
+      # - intel-openmp      # Intel OpenMP (if available)
+
+# Installation:
+# conda env create -f environment-cross-platform.yml
+# conda activate real-time-radar-cross-platform
+
+# Tested on:
+# - Windows 10/11 x64
+# - macOS (Intel/ARM)
+# - Ubuntu/Debian Linux

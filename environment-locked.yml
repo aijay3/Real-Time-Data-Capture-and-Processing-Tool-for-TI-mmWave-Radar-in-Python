@@ -1,0 +1,83 @@
+name: real-time-radar-locked
+channels:
+  - anaconda
+  - main
+dependencies:
+  # Core system packages with exact versions and builds
+  - ca-certificates=2024.11.26=haa95532_0
+  - libffi=3.4.4=hd77b12b_1
+  - openssl=3.0.15=h827c3e9_0
+  - pip=24.2=py38haa95532_0
+  - python=3.8.20=h8205438_0
+  - setuptools=75.1.0=py38haa95532_0
+  - sqlite=3.45.3=h2bbff1b_0
+  - vc=14.40=haa95532_2
+  - vs2015_runtime=14.42.34433=h9531ae6_2
+  - wheel=0.44.0=py38haa95532_0
+
+  # Python packages via pip (locked to exact versions from real_mt environment)
+  - pip:
+      - absl-py==0.10.0
+      - altgraph==0.17.4
+      - astunparse==1.6.3
+      - cachetools==4.1.1
+      - certifi==2020.6.20
+      - chardet==3.0.4
+      - contourpy==1.1.1
+      - cycler==0.10.0
+      - dearpygui==2.0.0
+      - fonttools==4.56.0
+      - gast==0.3.3
+      - google-auth==1.21.3
+      - google-auth-oauthlib==0.4.1
+      - google-pasta==0.2.0
+      - grpcio==1.32.0
+      - h5py==2.10.0
+      - idna==2.10
+      - importlib_metadata==8.5.0
+      - importlib_resources==6.4.5
+      - joblib==0.16.0
+      - kiwisolver==1.2.0
+      - llvmlite==0.41.1
+      - Markdown==3.2.2
+      - matplotlib==3.7.5
+      - netifaces==0.11.0
+      - numba==0.58.1
+      - numpy==1.24.4
+      - oauthlib==3.1.0
+      - opt-einsum==3.3.0
+      - packaging==24.2
+      - pefile==2023.2.7
+      - pillow==10.4.0
+      - protobuf==3.13.0
+      - psutil==5.9.5
+      - pyasn1==0.4.8
+      - pyasn1-modules==0.2.8
+      - pyFFTW==0.13.1
+      - pyinstaller==6.11.1
+      - pyinstaller-hooks-contrib==2024.11
+      - PyOpenGL==3.1.7
+      - PyOpenGL-accelerate==3.1.7
+      - pyparsing==2.4.7
+      - PyQt5==5.15.1
+      - PyQt5-sip==12.8.1
+      - pyqtgraph==0.13.3
+      - pyserial==3.5
+      - python-dateutil==2.8.1
+      - pywin32-ctypes==0.2.3
+      - requests==2.24.0
+      - requests-oauthlib==1.3.0
+      - rsa==4.6
+      - scikit-learn==0.23.2
+      - scipy==1.10.1
+      - six==1.15.0
+      - termcolor==1.1.0
+      - threadpoolctl==2.1.0
+      - urllib3==1.25.10
+      - Werkzeug==1.0.1
+      - wrapt==1.12.1
+      - zipp==3.20.2
+
+# This environment exactly matches the real_mt environment with Python 3.8.20
+# To recreate: conda env create -f environment-locked.yml
+# To activate: conda activate real-time-radar-locked
